@@ -1,0 +1,21 @@
+.App {
+  margin: 10px;
+}
+.btn {
+  background-color: rgba(182, 182, 182, 0.404);
+  border: none;
+  margin-left: 40%;
+  width: 15rem;
+  height: 6rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+.dark {
+  background-color: rgba(12, 12, 12, 0.829);
+  color: white;
+}
+.toggleBtn {
+  margin-top: 20px;
+  width: 7rem;
+}
