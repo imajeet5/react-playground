@@ -1,13 +1,13 @@
 import React from 'react';
+import Test2 from './examples/useReducerTodo';
+import TodoUsingState from './examples/useStateTodo';
 import './App.css';
-
-const element = <h1>This is JSX</h1>;
 
 function App() {
   return (
     <div className="App">
-      Start
-      {element}
+      <Test2 />
+      <TodoUsingState />
     </div>
   );
 }
