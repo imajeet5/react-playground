@@ -7,6 +7,7 @@ import WindowDimensions from './customHookExamples/useWindowDimensions';
 import {LocalStorageExample} from './customHookExamples/useLocalStorageHook';
 import { MyHook } from "./customHookExamples/myHook";
 import TestHookOne from "./customHookExamples/testHookOne";
+import Fetch from './customHookExamples/useFetch'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
      
      
-      <LocalStorageExample/>
+      <Fetch/>
    
     </div>
   );
