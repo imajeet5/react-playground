@@ -18,7 +18,6 @@ function useMyHook1(num) {
   return state;
 }
 
-
 function useMyHook3(num) {
   let [state, setState] = useState(num);
   console.log(state);
@@ -50,21 +49,36 @@ function useMyHook5(num) {
   return state;
 }
 function useMyHook6(num) {
-    let [state, setState] = useState({abc:'123'});
-    console.log(state);
-  
-    useEffect(() => {
-      setState((state) => ({...state, abc:'345'}));
-    });
-  
-    return state;
-  }
+  let [state, setState] = useState({ abc: '123' });
+  console.log(state);
+
+  useEffect(() => {
+    setState((state) => ({ ...state, abc: '345' }));
+  });
+
+  return state;
+}
+
+function useMyHook7(num) {
+  let [count, setCount] = useState(num);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCount(count + 1);
+    }, 1000);
+    return () => {      
+      clearInterval(id);
+    };
+  });
+
+  return count;
+}
 
 export function MyHook() {
-  let state = useMyHook6();
+  let state = useMyHook7(1);
   return (
     <div>
-      <p></p>
+      <p>{state}</p>
     </div>
   );
 }
