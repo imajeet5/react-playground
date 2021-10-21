@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
-const element = <h1>This is JSX</h1>;
+
 
 function App() {
   return (
-    <div className="App">
-      Start
-      {element}
+    <div className="App" style={{backgroundImage:"url(./FirstScreen.webp)"}}>
+     <h1>Hello</h1> 
+     
     </div>
   );
 }
